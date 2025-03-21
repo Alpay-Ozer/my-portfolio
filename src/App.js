@@ -29,7 +29,7 @@ const App = () => {
 
       <h2>About me</h2>
       <p>
-       Hallo👋! Mijn naam is Alpay Ozer, een gepassioneerde Full Stack Developer met ervaring in zowel frontend- als backendtechnologieën. Ik werk met HTML, CSS, JavaScript, React, Node.js en .NET om dynamische en schaalbare webapplicaties te bouwen. Daarnaast heb ik een sterke achtergrond in Java, C#, Kotlin en Swift, waardoor ik ook mobiele apps en complexe softwareoplossingen kan ontwikkelen.
+       Hallo! Mijn naam is Alpay Ozer, een gepassioneerde Full Stack Developer met ervaring in zowel frontend- als backendtechnologieën. Ik werk met HTML, CSS, JavaScript, React, Node.js en .NET om dynamische en schaalbare webapplicaties te bouwen. Daarnaast heb ik een sterke achtergrond in Java, C#, Kotlin en Swift, waardoor ik ook mobiele apps en complexe softwareoplossingen kan ontwikkelen.
 
         Voor databasebeheer en backendontwikkeling gebruik ik MySQL en MariaDB, en ik blijf altijd up-to-date met de nieuwste technologieën.
 
