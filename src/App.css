@@ -1,38 +1,121 @@
-.App {
+/* Algemene stijlen */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Donkere achtergrond */
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container */
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+}
+
+/* Profielfoto */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Naam en titel */
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Vaardigheden */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* Laat items netjes naast elkaar staan en breek op kleinere schermen */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px; /* Afstand tussen logo's */
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none; /* Verwijder standaard lijst-styling */
 }
 
-.App-link {
-  color: #61dafb;
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item img:hover {
+  transform: scale(1.2);
+}
+
+.skill-item p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Responsief design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  h2 {
+    font-size: 1.5rem;
   }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills-list {
+    gap: 10px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+.social {
+  margin-top: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }
